@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "reactchime3d467dc9": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

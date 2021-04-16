@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-reactchime-dev-142034-authRole",
+      "UnauthRoleArn": "arn:aws:iam::120741030969:role/amplify-reactchime-dev-142034-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::120741030969:role/amplify-reactchime-dev-142034-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-reactchime-dev-142034-deployment",
+      "UnauthRoleName": "amplify-reactchime-dev-142034-unauthRole",
+      "StackName": "amplify-reactchime-dev-142034",
+      "StackId": "arn:aws:cloudformation:us-east-1:120741030969:stack/amplify-reactchime-dev-142034/91e42d60-9c7c-11eb-bc49-12ff31b78b4f",
+      "AmplifyAppId": "d2ouox2yy97bei"
+    },
+    "categories": {
+      "auth": {
+        "reactchime3d467dc9": {}
+      }
+    }
+  }
+}
