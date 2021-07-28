@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   useRemoteVideoTileState,
   RemoteVideo,
@@ -7,14 +7,23 @@ import {
 } from 'amazon-chime-sdk-component-library-react';
 import MeetingControl from '../MeetingControl';
 import './videogrid.css'
+import { color } from 'styled-system';
 
 export default function MyVideoGrid(props){
+  // const [tiles, setTiles] = useState([])
   const { tiles } = useRemoteVideoTileState();
+  useEffect(()=>{
+    
+    console.log(tiles)
+  })
+  
 
   const videos = tiles.map((tileId) => {console.log(tileId);return <RemoteVideo tileId={tileId} />})
-
+  console.log("Tiles: ",tiles)
   return (
     <div className={`grid grid--size-${tiles.length}`} id="video-grid">
+
+      Video aqui{tiles}
       <div className={"videos-container"}>
         <div className={"remote-container"}>
           { tiles.length ? videos: "Aguardando inicio de chamada"}

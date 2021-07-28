@@ -2,7 +2,6 @@ import React, {useState, useContext, useEffect } from 'react';
 import axios from 'axios'
 import { useMeetingManager } from 'amazon-chime-sdk-component-library-react';
 import {User} from '../context'
-import { AmplifySignOut} from '@aws-amplify/ui-react';
 
 export default function Menu (props){
   const meetingManager = useMeetingManager();
@@ -88,7 +87,6 @@ export default function Menu (props){
       {meetingsList.map((meeting, i)=><option value={i} key = {i}>{meeting}</option>)}
     </select>
     {meeting}
-    <AmplifySignOut />
   </div>)
 };
 
